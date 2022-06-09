@@ -171,7 +171,7 @@ public class DemoSQLConfig extends APIJSONSQLConfig {
 		if (isMySQL()) {
 			// 这个是 MySQL 8.0 及以上，要加 userSSL=false  return "jdbc:mysql://localhost:3306?userSSL=false&serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8";
 			// 以下是 MySQL 5.7 及以下
-			return "jdbc:mysql://localhost:3306?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8"; //TODO 改成你自己的，TiDB 可以当成 MySQL 使用，默认端口为 4000
+			return "jdbc:mysql://localhost:3307?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8"; //TODO 改成你自己的，TiDB 可以当成 MySQL 使用，默认端口为 4000
 		}
 		if (isPostgreSQL()) {
 			return "jdbc:postgresql://localhost:5432/postgres?stringtype=unspecified"; //TODO 改成你自己的
@@ -213,7 +213,7 @@ public class DemoSQLConfig extends APIJSONSQLConfig {
 	@Override
 	public String getDBPassword() {
 		if (isMySQL()) {
-			return "apijson";  //TODO 改成你自己的，TiDB 可以当成 MySQL 使用， 默认密码为空字符串 ""
+			return "447831";  //TODO 改成你自己的，TiDB 可以当成 MySQL 使用， 默认密码为空字符串 ""
 		}
 		if (isPostgreSQL()) {
 			return null;  //TODO 改成你自己的

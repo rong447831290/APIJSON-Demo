@@ -1,5 +1,5 @@
 # APIJSONBoot
-
+运行sys.sql 在resource下
 APIJSON + SpringBoot 接近成品的 Demo
 
 ### 运行
